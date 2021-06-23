@@ -1,0 +1,26 @@
+.navigation{
+    position: fixed;
+    top: 0;
+    background: var(--color-primary);
+    width: 100vw;
+    height: 10rem;
+    color: var(--color-quad);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & img{
+        max-width: 20rem;
+        margin: 4rem 2rem;
+        // border-radius: 50%;
+    }
+
+    &__container{
+        margin: 0 auto;
+        
+        & a{
+            margin-top: 3rem;
+            
+        }
+    }
+}

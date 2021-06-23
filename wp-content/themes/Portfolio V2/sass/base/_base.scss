@@ -1,0 +1,78 @@
+@import url("https://use.typekit.net/tbd0duu.css"); // Fonts from Adobe Fonts
+
+// Quicksand Bold ******** 
+// font-family: quicksand,
+// sans-serif;
+// font-weight: 700;
+// font-style: normal;
+
+// Quicksand Regular ********
+// font-family: quicksand,
+// sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+// Permanent Marker ********
+// font-family: permanent-marker,
+// sans-serif;
+// font-weight: 400;
+// font-style: normal;
+
+
+:root{
+    // Hex Colors
+    --color-primary:#251351; // Russian Violet
+    --color-secondary:#7765E3; // Medium Slate Blue
+    --color-tertiary:#646165; // Dim Gray
+    --color-quad:#C5CBD3; // Silver Sand
+    --color-fifth:#EFEFEF; // Cultured
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: quicksand,
+    sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2;
+}
+
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html{
+    font-size:62.5%; //Defines 1rem as 10px
+
+    @include respond(phone) {
+        font-size: 50%;
+    }
+    @include respond(tab-land) {
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(big-desk){
+        font-size: 75%;
+    }
+
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.4rem;
+}
