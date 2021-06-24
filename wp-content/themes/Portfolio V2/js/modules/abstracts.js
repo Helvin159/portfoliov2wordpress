@@ -24,7 +24,7 @@ class abstract{
             console.log(windowPos);
             
             
-            if(innerW >= 1200){
+            if(innerW > 1200){
                 // Dissapear
                 if(windowPos <= 1750){
                     setTimeout(()=>{
