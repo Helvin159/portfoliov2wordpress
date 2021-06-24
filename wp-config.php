@@ -20,16 +20,32 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'local' );
+if($_SERVER['SERVER_NAME'] === 'myportfolio.local'){
 
-/** MySQL database username */
-define( 'DB_USER', 'root' );
+	define( 'DB_NAME', 'local' );
 
-/** MySQL database password */
-define( 'DB_PASSWORD', 'root' );
+	/** MySQL database username */
+	define( 'DB_USER', 'root' );
 
-/** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+	/** MySQL database password */
+	define( 'DB_PASSWORD', 'root' );
+
+	/** MySQL hostname */
+	define( 'DB_HOST', 'localhost' );
+} else{
+
+	define( 'DB_NAME', 'kmmkcamy_portfoliov2' );
+
+	/** MySQL database username */
+	define( 'DB_USER', 'kmmkcamy_mrrymer' );
+
+	/** MySQL database password */
+	define( 'DB_PASSWORD', 'Dora0411!?!' );
+
+	/** MySQL hostname */
+	define( 'DB_HOST', 'localhost' );
+}
+
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
