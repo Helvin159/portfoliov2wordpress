@@ -64,7 +64,7 @@
 
 .about {
     background-color: var(--color-primary);
-    height: 50rem;
+    min-height: 35rem;
 }
 
 .recent{
@@ -100,7 +100,7 @@
 }
 
 .contact{
-    min-height: 40rem;
+    min-height: 25rem;
     background: linear-gradient(to top, var(--color-primary) 80%, white 15%);
 
     &__container{

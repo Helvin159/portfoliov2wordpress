@@ -153,7 +153,7 @@ p {
 
 .about {
   background-color: var(--color-primary);
-  height: 50rem; }
+  min-height: 35rem; }
 
 .recent__col__container img {
   border-radius: 1.5rem;
@@ -173,7 +173,7 @@ p {
   max-width: 12.5rem; }
 
 .contact {
-  min-height: 40rem;
+  min-height: 25rem;
   background: linear-gradient(to top, var(--color-primary) 80%, white 15%); }
   .contact__container {
     background-color: var(--color-secondary);
