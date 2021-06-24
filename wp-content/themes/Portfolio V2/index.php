@@ -53,7 +53,9 @@
         <div class="container__large skills">
             <div class="container skills__container">
                 <div class="row skills__flexContainer text-center">
+                    
                     <div class="row__col__4 skills__cols ">
+                                           
                         <div class="container skills__cols__containers skills__cols__header">
                             <img srcset="<?php echo get_theme_file_uri('assets/devWork-small.png')?> 1x, <?php echo get_theme_file_uri('assets/devWork.png')?> 2x" alt="Dev Work" >   
                         </div>

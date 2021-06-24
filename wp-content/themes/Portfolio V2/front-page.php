@@ -53,104 +53,49 @@
         <div class="container__large skills">
             <div class="container skills__container">
                 <div class="row skills__flexContainer text-center">
-                    <div class="row__col__4 skills__cols ">
-                        <div class="container skills__cols__containers skills__cols__header">
-                            <img srcset="<?php echo get_theme_file_uri('assets/devWork-small.png')?> 1x, <?php echo get_theme_file_uri('assets/devWork.png')?> 2x" alt="Dev Work" >   
-                        </div>
-                        <div class="container skills__cols__containers">
-                            <h1>Front End Dev</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fugiat consectetur voluptate expedita iusto!
-                            </p>
-                        </div>
-                        <div class="container skills__cols__containers">
-                            <h1>Languages I Speak:</h1>
-                            <p>HTML, PHP, JS, CSS, SASS, BEM, SQL, Bootstrap</p>
-                        </div>
-                        <div class="container skills__cols__containers skills__cols__tools">
-                            <h1>Dev Tools:</h1>
+                    <?php 
+                    $showPost = new WP_Query(array(
+                        'posts_per_page' => 3,
+                        'post_type' => 'services',
+                        'paged' => false,
+                    ));
 
-                            <ul>
-                                <li>VS Code</li>
-                                <li>Github</li>
-                                <li>NodeJs</li>
-                                <li>MAMP</li>
-                                <li>Local</li>
-                                <li>Terminal</li>
-                                <li>Adobe Photoshop</li>
-                                <li>Adobe Illustrator</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row__col__4 skills__cols">
-                        <div class="container skills__cols__containers skills__cols__header">
-                            <img srcset="<?php echo get_theme_file_uri('assets/consultation-small.png')?>  1x, <?php echo get_theme_file_uri('assets/consultation-large.png')?>  2x" alt="Consultation" >
-                        </div>
-                        <div class="container skills__cols__containers">
-                            <h1>Consultation</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fugiat consectetur voluptate expedita iusto!
-                            </p>
-                        </div>
-                        <div class="container skills__cols__containers">
-                            <h1>What are we looking to do?</h1>
-                            <p>Discuss plans, directions designs and ideas!</p>
-                        </div>
-                        <div class="container skills__cols__containers skills__cols__tools">
-                            <h1>Options to discuss:</h1>
+                     while($showPost->have_posts() !== false){ 
+                        $showPost->the_post();  ?>
+                        <div class="row__col__4 skills__cols ">
+                            <div class="container skills__cols__containers skills__cols__header">
+                                <img src="<?php echo get_the_post_thumbnail_url();?>" alt="Dev Work" >   
+                            </div>
+                            
+                            <div class="container skills__cols__containers">
+                                <h1><?php the_title()?></h1>
+                                <p>
+                                    <?php the_content();?>
+                                </p>
+                            </div>
+                            <div class="container skills__cols__containers">
+                                <h1><?php echo get_field('home_page_cards_subtitle');?></h1>
+                                <p><?php echo get_field('home_page_cards_subcontent');?></p>
+                            </div>
+                            <div class="container skills__cols__containers skills__cols__tools">
+                                <h1><?php echo get_field('home_page_cards_tertiarytitle');?></h1>
 
-                            <ul >
-                                <li>Zoom: For meetings</li>
-                                <li>Facetime: For meetings</li>
-                                <li>Email: Communication</li>
-                                <li>Phone: Communication</li>
-                                <li>Portfolio Website</li>
-                                <li>Wordpress</li>
-                                <li>Wordpress + eCommerce</li>
-                                <li>Non CMS Sites</li>
-                                <li>Landing Pages</li>
-                            </ul>
-                    
-                    </div>
-                    </div>
-                    <div class="row__col__4 skills__cols">
-                        <div class="container skills__cols__containers skills__cols__header">
-                            <img srcset="
-                                <?php echo get_theme_file_uri('assets/wordpress-small.png')?>  1x, 
-                                <?php echo get_theme_file_uri('assets/wordpress-small.png')?>  2x" 
-                                alt="Wordpress" >
+                                <ul>
+                                    <li><?php echo get_field('list_item_one');?></li>
+                                    <li><?php echo get_field('list_item_two');?></li>
+                                    <li><?php echo get_field('list_item_three');?></li>
+                                    <li><?php echo get_field('list_item_four');?></li>
+                                    <li><?php echo get_field('list_item_five');?></li>
+                                    <li><?php echo get_field('list_item_six');?></li>
+                                    <li><?php echo get_field('list_item_seven');?></li>
+                                    <li><?php echo get_field('list_item_8');?></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="container skills__cols__containers">
-                            <h1>Custom Wordpress</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, fugiat consectetur voluptate expedita iusto!
-                            </p>
-                        </div>
-                        <div class="container skills__cols__containers">
-                            <h1>What I Do:</h1>
-                            <p>eCommerce, Custom Themes, Etc...</p>
-                        </div>
-                        <div class="container skills__cols__containers skills__cols__tools">
-                            <h1>Type of work:</h1>
-
-                            <ul >
-                                <li>VS Code</li>
-                                <li>eCommerce</li>
-                                <li>Custom Theme</li>
-                                <li>Custom Post Types</li>
-                                <li>Minimal Plugins</li>
-                                <li>Custom API's</li>
-                                <li>Animations</li>
-                                <li>SEO Optimization</li>
-                                <li>Maintenance</li>
-                            </ul>
-                        </div>
-                    </div>                    
+                    <?php } wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
-
-        <!-- <hr class="my-5 mx-5"> -->
 
         <div class="container__100w recent">
             <div class="container text-center recent__header py-4">
@@ -159,71 +104,24 @@
             </div>
             <div class="container">
                 <div class="row py-3 recent__flexContainer text-center">
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                                <?php echo get_theme_file_uri('assets/selffit-lowres.jpg')?>  1x, 
-                                <?php echo get_theme_file_uri('assets/selffit-large.jpg')?>  2x" 
-                                style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://selffitdr.com/" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                            <?php echo get_theme_file_uri('assets/danielle-lowres.jpg')?>  1x, 
-                            <?php echo get_theme_file_uri('assets/danielle-large.jpg')?>  2x" style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://mrrymer.com/pages/writer" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                            <?php echo get_theme_file_uri('assets/portfliov1-lowres2.jpg')?>  1x, 
-                            <?php echo get_theme_file_uri('assets/portfliov1-large.jpg')?>  2x"
-                            style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://helvinrymer.com" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                            <?php echo get_theme_file_uri('assets/lashtech-lowres.jpg')?>  1x, 
-                            <?php echo get_theme_file_uri('assets/lashtech-large.jpg')?>  2x"
-                            style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://mrrymer.com/pages/enya" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                            <?php echo get_theme_file_uri('assets/maniacink-lowres.jpg')?>  1x, 
-                            <?php echo get_theme_file_uri('assets/maniacink-large.jpg')?>  2x"
-                            style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://maniacink.com/" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
-                    <div class="row__col__4 recent__col__4">
-                        <div class="container recent__col__container">
-                            <img srcset="
-                            <?php echo get_theme_file_uri('assets/nblackburn-lowres.jpg')?>  1x, 
-                            <?php echo get_theme_file_uri('assets/nblackburn-large.jpg')?>  2x"
-                            style="max-width: 34rem;" alt="">
-                        </div>
-                        <div class="container p-3 recent__col__container">
-                            <a href="https://mrrymer.com/pages/blackburn/" target="_blank" class="btn">View</a>
-                        </div>
-                    </div>
+                    <?php 
+                    $showPost = new WP_Query(array(
+                        'posts_per_page' => 6,
+                        'post_type' => 'prevwork',
+                        'paged' => false,
+                    ));
+
+                     while($showPost->have_posts() !== false){ 
+                        $showPost->the_post();  ?>
+                            <div class="row__col__4 recent__col__4">
+                                <div class="container recent__col__container">
+                                    <img srcset="<?php echo get_field('small_image')?> 1x, <?php echo get_field('large_image')?> 2x" style="max-width: 34rem;" alt="">
+                                </div>
+                                <div class="container p-3 recent__col__container">
+                                    <a href="<?php echo get_field('page_link');?>" target="_blank" class="btn">View</a>
+                                </div>
+                            </div>
+                        <? } wp_reset_postdata(); ?>
                 </div>
                 <!-- <div class="container text-center p-4">
                     <a class="btn recent__button">See More</a>
@@ -231,75 +129,32 @@
             </div>
         </div>
 
-        <!-- <hr class="my-5 mx-5 "> -->
-
-        <!-- <div class="container__100w ">
-            <div class="container text-center">
-                <h1 class="d-3 permanent-marker">Proud Partners and Previous Collaborations:</h1>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                    <div class="row__col__3"><img src="assets/Octocat1.png" style="max-width:10.5rem" alt=""></div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="container__100w latest">
-            <div class="container text-center p-5 font-light">
-                <h1 class="d-3 permanent-marker">My Latest Projects</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, delectus consectetur. Laudantium itaque quaerat ut rem recusandae veritatis facere distinctio tempora delectus ducimus deserunt quasi, expedita a, dolorem quibusdam possimus?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt hic nesciunt nulla itaque, quia quisquam distinctio officia consequatur ab incidunt dignissimos culpa pariatur tempore veniam possimus totam cupiditate iusto et!</p>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="row__col latest__col">
-                        <img src="assets/lashtech-large.jpg" style="max-width:25rem" alt="">
-                    </div>            
-                    <div class="row__col latest__col">
-                        <img src="assets/danielle-large.jpg" style="max-width:25rem" alt="">
-                    </div>            
-                    <div class="row__col latest__col">
-                        <img src="assets/maniacink-large.jpg" style="max-width:25rem" alt="">
-                    </div>
-                    <div class="row__col latest__col">
-                        <img src="assets/portfliov1-large.jpg" style="max-width:25rem" alt="">
-                    </div>            
-                    <div class="row__col latest__col">
-                        <img src="assets/selffit-large.jpg" style="max-width:25rem" alt="">
-                    </div>            
-                    <div class="row__col latest__col">
-                        <img src="assets/nblackburn-large.jpg" style="max-width:25rem" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="container text-center">
-                <h1 class="my-1">Interested in working with me?</h1>
-                <p class="my-2">I am always open to etc...</p>
-                <button class="btn my-1">Start a conversation</button>
-            </div>
-        </div> -->
-
         <div class="container__100vw testimonials">
             <div class="container px-5 mt-5 text-center">
                 <h1 class="d-3 permanent-marker">Testimonials</h1>
             </div>
-            <div class="container testimonials__card px-5 text-center">
-                <div class="container testimonials__card__img">
-                    <img src="<?php echo get_theme_file_uri('assets/Octocat1.png') ?>"  alt="">
-                </div>
-                <div class="container py-4 testimonials__card__review" style="max-width: 80rem;">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit suscipit, voluptatem, dicta laboriosam ratione explicabo voluptatum nesciunt atque molestiae fuga at, repellat dolore excepturi praesentium consequatur modi maxime illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis enim recusandae illum qui amet blanditiis doloremque labore voluptas, praesentium numquam, sint perspiciatis nostrum delectus eligendi expedita? Quis, velit minima. Fuga?
-                    </p>
-                </div>
-            </div>
+            <?php 
+                $showPost = new WP_Query(array(
+                    'posts_per_page' => 1,
+                    'post_type' => 'testimonial',
+                    'paged' => false,
+                ));
+
+                if($showPost->have_posts() !== false){ 
+                    $showPost->the_post(); ?>
+                    <div class="container testimonials__card px-5 text-center">
+                        <div class="container testimonials__card__img">
+                            <img src="<?php echo get_the_post_thumbnail_url();?>"  alt="">
+                        </div>
+                        <div class="container py-4 testimonials__card__review" style="max-width: 80rem;">
+                            <h1><?php the_title(); ?></h1>
+                            <p>
+                                <?php the_content(); ?>
+                            </p>
+                        </div>
+                    </div>
+                <?php } wp_reset_postdata(); ?>
+            
         </div>
 
         <div class="container__100vw contact">
