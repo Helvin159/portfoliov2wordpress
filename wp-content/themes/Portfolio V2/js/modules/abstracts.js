@@ -18,10 +18,11 @@ class abstract{
             recentPics.style.opacity = '0';
         });
          
-
+            console.log(innerW);
         window.addEventListener('scroll', ()=>{
             let windowPos = window.scrollY;
-            // console.log(windowPos);
+            console.log(windowPos);
+            
             
             if(innerW >= 1200){
                 // Dissapear
@@ -104,6 +105,96 @@ class abstract{
                 }
             }
             
+            if(innerW <= 1200){
+                // Disappear
+                if(windowPos <= 1322){
+                    setTimeout(()=>{
+                        
+                        recentPics[0].style.transition = '.5s ease-in'
+                        recentPics[0].style.opacity = '0';
+                        if(count > 0){
+                            interval = interval + 450;
+                        }
+                    }, 10)
+
+                    setTimeout(()=>{
+
+                        recentPics[1].style.transition = '.5s ease-in'
+                        recentPics[1].style.opacity = '0';
+                    }, 350)
+                }
+
+                if(windowPos <= 1600){
+                    setTimeout(()=>{
+                        recentPics[2].style.transition = '.5s ease-in'
+                        recentPics[2].style.opacity = '0';
+                    }, 10)
+                    
+                    setTimeout(()=>{
+                        recentPics[3].style.transition = '.5s ease-in'
+                        recentPics[3].style.opacity = '0';
+                    }, 350)
+                }
+
+                if(windowPos <= 1904){
+                    setTimeout(()=>{
+                    recentPics[4].style.transition = '.5s ease-in'
+                    recentPics[4].style.opacity = '0';
+                }, 10)
+                
+                setTimeout(()=>{
+                    recentPics[5].style.transition = '.5s ease-in'
+                    recentPics[5].style.opacity = '0';
+                }, 350)
+                }
+
+
+                // Appear
+                if(windowPos >= 1480){
+                    setTimeout(()=>{
+                        count++;
+                        recentPics[0].style.transition = '.5s ease-in'
+                        recentPics[0].style.opacity = '1';
+                        if(count > 0){
+                            interval = interval + 450;
+                        }
+                    }, 1)
+
+                    setTimeout(()=>{
+                        // console.log(interval);
+                        count++;
+                        recentPics[1].style.transition = '.5s ease-in'
+                        recentPics[1].style.opacity = '1';
+                        if(count > 0){
+                            interval = interval + 450;
+                        }
+                    }, 350)
+                }
+
+                if(windowPos >= 1802){
+                    setTimeout(()=>{
+                        recentPics[2].style.transition = '.5s ease-in'
+                        recentPics[2].style.opacity = '1';
+                    }, 10)
+                    
+                    setTimeout(()=>{
+                        recentPics[3].style.transition = '.5s ease-in'
+                        recentPics[3].style.opacity = '1';
+                    }, 350)
+                }  
+                        
+                if(windowPos >= 2111){
+                    setTimeout(()=>{
+                    recentPics[4].style.transition = '.5s ease-in'
+                    recentPics[4].style.opacity = '1';
+                }, 10)
+                
+                setTimeout(()=>{
+                    recentPics[5].style.transition = '.5s ease-in'
+                    recentPics[5].style.opacity = '1';
+                }, 350)
+                }
+            }
 
             if(innerW <= 900){
                 // Disappear
