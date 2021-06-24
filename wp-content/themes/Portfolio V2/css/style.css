@@ -119,7 +119,7 @@ p {
   margin: 0 auto; }
   @media (max-width: 56.25em) {
     .hero__container {
-      min-height: 80vh; } }
+      min-height: 60vh; } }
 
 .skills {
   background: linear-gradient(to bottom, var(--color-primary) 30%, white 30%, white 40%); }

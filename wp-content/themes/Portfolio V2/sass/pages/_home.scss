@@ -4,7 +4,7 @@
     margin: 0 auto;
 
     @include respond(tab-port) {
-        min-height: 80vh;
+        min-height: 60vh;
     }
 }
 
