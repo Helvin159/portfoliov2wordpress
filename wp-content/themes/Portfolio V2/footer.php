@@ -30,21 +30,21 @@
         <div class="container footer__content__message text-center font-light">
             <p>
                 Wordpress theme developed by Helvin Rymer.
-                <span>
-                <iframe width="100%" height="100rem" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1048504471&color=%237765e3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-                
-                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <h3 title="J. Cole" style="color: #cccccc; text-decoration: none;">
-                        J. Cole
-                    </h3> 
+                <!-- <span>
+                    <iframe width="100%" height="100rem" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1048504471&color=%237765e3&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
                     
-                    · 
-                    
-                    <p title="h u n g e r . o n . h i l l s i d e (with Bas)" style="color: #cccccc; text-decoration: none;">
-                        h u n g e r . o n . h i l l s i d e (with Bas)
-                    </p>
-                </div>
-                </span>
+                    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                        <h3 title="J. Cole" style="color: #cccccc; text-decoration: none;">
+                            J. Cole
+                        </h3> 
+                        
+                        · 
+                        
+                        <p title="h u n g e r . o n . h i l l s i d e (with Bas)" style="color: #cccccc; text-decoration: none;">
+                            h u n g e r . o n . h i l l s i d e (with Bas)
+                        </p>
+                    </div>
+                </span> -->
             </p>
         </div>
     </div>

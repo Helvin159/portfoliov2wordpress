@@ -6,6 +6,41 @@ $breakpoint choices:
     big-desk
 */
 @import url("https://use.typekit.net/tbd0duu.css");
+.svg-circle {
+  fill: #7765E3; }
+
+.svgOne {
+  max-width: 100rem;
+  max-height: 20rem; }
+  .svgOne__window__1 {
+    fill: #7765E3; }
+  .svgOne__window__2 {
+    fill: #fff; }
+  .svgOne__window__3 {
+    fill: #fff; }
+  .svgOne__window__4 {
+    fill: #7765E3; }
+  .svgOne__window__5 {
+    fill: #7765E3; }
+  .svgOne__window__6 {
+    fill: #fff; }
+  .svgOne__window__7 {
+    fill: #fff; }
+  .svgOne__window__8 {
+    fill: #7765E3; }
+  .svgOne__window__9 {
+    fill: #7765E3; }
+  .svgOne__window__10 {
+    fill: #fff; }
+  .svgOne__window__11 {
+    fill: #fff; }
+  .svgOne__window__12 {
+    fill: #7765E3; }
+  .svgOne__window__13 {
+    fill: #7765E3; }
+  .svgOne__window__14 {
+    fill: #fff; }
+
 :root {
   --color-primary:#251351;
   --color-secondary:#7765E3;

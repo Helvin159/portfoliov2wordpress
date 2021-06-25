@@ -7,8 +7,6 @@
         <img src="<?php echo get_theme_file_uri('assets/Octocat1.png')?>" style="max-width: 30rem;border-radius: 50%;" alt="">
     </div>
     <div class="container mb-0 text-center">
-        <div >
-            <?php  require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/portfolio v2/includes/svg/city.php'); ?>
-        </div>
+        <h1>hello... SVG Goes Here</h1>
     </div>
 </div>
