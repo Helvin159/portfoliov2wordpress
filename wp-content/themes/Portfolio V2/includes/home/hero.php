@@ -8,7 +8,13 @@
     </div>
     <div class="container mb-0 text-center">
         <div >
-            <?php  require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/portfolio v2/includes/svg/city.php'); ?>
+            <?php  
+            if($_SERVER['SERVER_NAME'] !== 'myportfolio.local/'){
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/portfolio v2/includes/svg/city.php');
+            }else{
+                print_r($_SERVER['DOCUMENT_ROOT']);
+            } ?>
+            
         </div>
     </div>
 </div>
