@@ -34,7 +34,6 @@
             echo paginate_links(array(
             'base' => str_replace($base, '%#%', get_pagenum_link($base)),
             'format' => '?paged=%#%',
-            'class' => 'pagination__btns',
             'current' => max(1, get_query_var('paged')),
             'total' => $showPost->max_num_pages
             ));

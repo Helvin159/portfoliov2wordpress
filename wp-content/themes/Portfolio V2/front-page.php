@@ -8,7 +8,6 @@
         require_once('includes/home/testimonials.php');
         require_once('includes/contact.php');
         require_once('footer.php');
-        // get_footer(); 
         ?>
 
         

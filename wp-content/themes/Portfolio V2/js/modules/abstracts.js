@@ -26,37 +26,39 @@ class abstract{
                     // Dissapear
                     if(windowPos <= 1000){
                         setTimeout(()=>{
-                           
-                            recentPics[0].style.transition = '.5s ease-in'
-                            recentPics[0].style.opacity = '0';
+                            recentPics.forEach(recentPics => {
+                            recentPics.style.opacity = '0';
+                            }); 
+                            // recentPics[0].style.transition = '.5s ease-in'
+                            // recentPics[0].style.opacity = '0';
                         }, 10)
 
-                        setTimeout(()=>{
-                            // console.log(interval);
+                        // setTimeout(()=>{
+                        //     // console.log(interval);
                            
-                            recentPics[1].style.transition = '.5s ease-in'
-                            recentPics[1].style.opacity = '0';
-                        }, 350)
+                        //     recentPics[1].style.transition = '.5s ease-in'
+                        //     recentPics[1].style.opacity = '0';
+                        // }, 350)
                             
-                        setTimeout(()=>{
-                            recentPics[2].style.transition = '.5s ease-in'
-                            recentPics[2].style.opacity = '0';
-                        }, 700)
+                        // setTimeout(()=>{
+                        //     recentPics[2].style.transition = '.5s ease-in'
+                        //     recentPics[2].style.opacity = '0';
+                        // }, 700)
                         
-                        setTimeout(()=>{
-                            recentPics[3].style.transition = '.5s ease-in'
-                            recentPics[3].style.opacity = '0';
-                        }, 1050)
+                        // setTimeout(()=>{
+                        //     recentPics[3].style.transition = '.5s ease-in'
+                        //     recentPics[3].style.opacity = '0';
+                        // }, 1050)
                         
-                        setTimeout(()=>{
-                            recentPics[4].style.transition = '.5s ease-in'
-                            recentPics[4].style.opacity = '0';
-                        }, 1400)
+                        // setTimeout(()=>{
+                        //     recentPics[4].style.transition = '.5s ease-in'
+                        //     recentPics[4].style.opacity = '0';
+                        // }, 1400)
                         
-                        setTimeout(()=>{
-                            recentPics[5].style.transition = '.5s ease-in'
-                            recentPics[5].style.opacity = '0';
-                        }, 1750)
+                        // setTimeout(()=>{
+                        //     recentPics[5].style.transition = '.5s ease-in'
+                        //     recentPics[5].style.opacity = '0';
+                        // }, 1750)
                     }
 
                     // Appear
@@ -174,40 +176,18 @@ class abstract{
                             
                             recentPics[0].style.transition = '.5s ease-in'
                             recentPics[0].style.opacity = '0';
-                            
-                        }, 10)
-
-                        setTimeout(()=>{
-
                             recentPics[1].style.transition = '.5s ease-in'
                             recentPics[1].style.opacity = '0';
-                        }, 350)
-                    }
-
-                    if(windowPos < 1006){
-                        setTimeout(()=>{
                             recentPics[2].style.transition = '.5s ease-in'
                             recentPics[2].style.opacity = '0';
-                        }, 10)
-                        
-                        setTimeout(()=>{
                             recentPics[3].style.transition = '.5s ease-in'
                             recentPics[3].style.opacity = '0';
-                        }, 350)
+                            recentPics[4].style.transition = '.5s ease-in'
+                            recentPics[4].style.opacity = '0';
+                            recentPics[5].style.transition = '.5s ease-in'
+                            recentPics[5].style.opacity = '0';                            
+                        }, 10)
                     }
-
-                    if(windowPos < 1292){
-                        setTimeout(()=>{
-                        recentPics[4].style.transition = '.5s ease-in'
-                        recentPics[4].style.opacity = '0';
-                    }, 10)
-                    
-                    setTimeout(()=>{
-                        recentPics[5].style.transition = '.5s ease-in'
-                        recentPics[5].style.opacity = '0';
-                    }, 350)
-                    }
-
 
                     // Appear
                     if(windowPos >= 1006){
@@ -215,44 +195,19 @@ class abstract{
                             
                             recentPics[0].style.transition = '.5s ease-in'
                             recentPics[0].style.opacity = '1';
-                            
-                        }, 10)
-
-                        setTimeout(()=>{
-                            // console.log(interval);
-                            
                             recentPics[1].style.transition = '.5s ease-in'
-                            recentPics[1].style.opacity = '1';
-                            
-                        }, 350)
-                    }
-
-                    if(windowPos >= 1292){
-                        setTimeout(()=>{
+                            recentPics[1].style.opacity = '0';
                             recentPics[2].style.transition = '.5s ease-in'
-                            recentPics[2].style.opacity = '1';
-                        }, 10)
-                        
-                        setTimeout(()=>{
+                            recentPics[2].style.opacity = '0';
                             recentPics[3].style.transition = '.5s ease-in'
-                            recentPics[3].style.opacity = '1';
-                        }, 350)
-                    }  
-                            
-                    if(windowPos >= 1559){
-                        setTimeout(()=>{
-                        recentPics[4].style.transition = '.5s ease-in'
-                        recentPics[4].style.opacity = '1';
-                    }, 10)
-                    
-                    setTimeout(()=>{
-                        recentPics[5].style.transition = '.5s ease-in'
-                        recentPics[5].style.opacity = '1';
-                    }, 350)
-                    }
-                        
-                        
-                    
+                            recentPics[3].style.opacity = '0';
+                            recentPics[4].style.transition = '.5s ease-in'
+                            recentPics[4].style.opacity = '0';
+                            recentPics[5].style.transition = '.5s ease-in'
+                            recentPics[5].style.opacity = '0';
+                                                        
+                        }, 10)
+                    }      
                 }
                 
                 if(innerW <= 768){
@@ -262,38 +217,18 @@ class abstract{
                             
                             recentPics[0].style.transition = '.5s ease-in'
                             recentPics[0].style.opacity = '0';
-                            
-                        }, 10)
-
-                        setTimeout(()=>{
-
                             recentPics[1].style.transition = '.5s ease-in'
                             recentPics[1].style.opacity = '0';
-                        }, 350)
-                    }
-
-                    if(windowPos < 1440){
-                        setTimeout(()=>{
                             recentPics[2].style.transition = '.5s ease-in'
                             recentPics[2].style.opacity = '0';
-                        }, 10)
-                        
-                        setTimeout(()=>{
                             recentPics[3].style.transition = '.5s ease-in'
                             recentPics[3].style.opacity = '0';
-                        }, 350)
-                    }
-
-                    if(windowPos < 1725){
-                        setTimeout(()=>{
-                        recentPics[4].style.transition = '.5s ease-in'
-                        recentPics[4].style.opacity = '0';
-                    }, 10)
-                    
-                    setTimeout(()=>{
-                        recentPics[5].style.transition = '.5s ease-in'
-                        recentPics[5].style.opacity = '0';
-                    }, 350)
+                            recentPics[4].style.transition = '.5s ease-in'
+                            recentPics[4].style.opacity = '0';
+                            recentPics[5].style.transition = '.5s ease-in'
+                            recentPics[5].style.opacity = '0';
+                            
+                        }, 10)
                     }
 
 
