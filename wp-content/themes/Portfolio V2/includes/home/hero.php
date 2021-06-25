@@ -12,10 +12,8 @@
             <?php  
             if($_SERVER['SERVER_NAME'] !== 'myportfolio.local/'){
                 require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/portfolio v2/includes/svg/city.php');
-            }else {
-                // require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/portfolio v2/includes/svg/city.php');
-                print_r($_SERVER['DOCUMENT_ROOT']);
-            }?>
+            }
+            ?>
             
         </div>
     </div>
