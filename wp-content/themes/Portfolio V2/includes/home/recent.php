@@ -10,24 +10,27 @@
                 'posts_per_page' => 6,
                 'post_type' => 'prevwork',
                 'paged' => false,
+                'orderby' => 'meta_value',
+                'order' => 'ASC'
             ));
 
 
 
                 while($showPost->have_posts() !== false){ 
                 $showPost->the_post();  ?>
-                    <div class="row__col__4 recent__col__4">
+                    <div class="row__col__4 recent__col__4 skills__thumbs">
                         <div class="container recent__col__container">
-                            <img srcset="<?php echo get_field('small_image')?> 1x, <?php echo get_field('large_image')?> 2x" style="max-width: 34rem;" alt="">
+                            <img srcset="<?php echo get_field('small_image');?> 1x, <?php echo get_field('large_image');?> 2x" style="max-width: 34rem;" alt="">
                         </div>
-                        <div class="container p-3 recent__col__container">
+                        <div class="container recent__col__container">
+                            <h1 class="my-2"><?php the_title()?></h1>
                             <a href="<?php echo get_field('page_link');?>" target="_blank" class="btn">View</a>
                         </div>
                     </div>
                 <? } wp_reset_postdata(); ?>
         </div>
-        <!-- <div class="container text-center p-4">
-            <a class="btn recent__button">See More</a>
-        </div> -->
+        <div class="container text-center p-4">
+            <a href="<?php echo esc_url(site_url('previous-work')); ?>" class="btn recent__button">See More</a>
+        </div>
     </div>
 </div>

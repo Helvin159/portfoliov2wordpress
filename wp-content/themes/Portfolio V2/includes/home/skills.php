@@ -3,14 +3,14 @@
         <div class="row skills__flexContainer text-center">
             <?php 
             $showPost = new WP_Query(array(
-                'posts_per_page' => 3,
+                'posts_per_page' => 6,
                 'post_type' => 'services',
                 'paged' => false,
             ));
 
                 while($showPost->have_posts() !== false){ 
                 $showPost->the_post();  ?>
-                <div class="row__col__4 skills__cols ">
+                <div class="row__col__4 skills__cols">
                     <div class="container skills__cols__containers skills__cols__header">
                         <img src="<?php echo get_the_post_thumbnail_url();?>" alt="Dev Work" >   
                     </div>
