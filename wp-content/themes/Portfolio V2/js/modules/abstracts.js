@@ -8,7 +8,7 @@ class abstract{
         const recentPics = document.querySelectorAll('.skills__thumbs');
         const innerW = window.innerWidth;
         
-        console.log(recentPics);
+        // console.log(recentPics);
         console.log(window.location.pathname);
         // console.log(window.devicePixelRatio, 'DPR');
         

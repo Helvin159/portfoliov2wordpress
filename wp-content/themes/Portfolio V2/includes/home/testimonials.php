@@ -13,7 +13,7 @@
             $showPost->the_post(); ?>
             <div class="container testimonials__card px-5 text-center">
                 <div class="container testimonials__card__img">
-                    <img src="<?php echo get_the_post_thumbnail_url();?>"  alt="">
+                    <!-- <img src="<?php // echo get_the_post_thumbnail_url();?>"  alt=""> -->
                 </div>
                 <div class="container py-4 testimonials__card__review" style="max-width: 80rem;">
                     <h1><?php the_title(); ?></h1>

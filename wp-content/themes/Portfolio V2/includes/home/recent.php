@@ -23,8 +23,9 @@
                             <img srcset="<?php echo get_field('small_image');?> 1x, <?php echo get_field('large_image');?> 2x" style="max-width: 34rem;" alt="">
                         </div>
                         <div class="container recent__col__container">
-                            <h1 class="my-2"><?php the_title()?></h1>
-                            <a href="<?php echo get_field('page_link');?>" target="_blank" class="btn">View</a>
+                            <h1 class="my-2"><?php the_title()?></h1>    
+                            <a href="<?php esc_url(the_permalink());?>" class="btn mx-1">About</a>
+                            <a href="<?php echo esc_url(get_field('page_link'));?>" target="_blank" class="btn mx-1">View</a>
                         </div>
                     </div>
                 <? } wp_reset_postdata(); ?>
