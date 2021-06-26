@@ -24,7 +24,7 @@
                         </div>
                         <div class="container recent__col__container">
                             <h1 class="my-2"><?php the_title()?></h1>    
-                            <a href="<?php esc_url(the_permalink());?>" class="btn mx-1">About</a>
+                            <!-- <a href="<?php //esc_url(the_permalink());?>" class="btn mx-1">About</a> -->
                             <a href="<?php echo esc_url(get_field('page_link'));?>" target="_blank" class="btn mx-1">View</a>
                         </div>
                     </div>

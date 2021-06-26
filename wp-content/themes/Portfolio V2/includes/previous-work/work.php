@@ -19,7 +19,7 @@
                             <div class="container ">
                                 <h1 class="my-2"><?php the_title()?></h1>
                                 
-                                <a href="<?php the_permalink();?>" class="btn mx-1">About</a>
+                                <!-- <a href="<?php //the_permalink();?>" class="btn mx-1">About</a> -->
                                 <a href="<?php echo get_field('page_link');?>" target="_blank" class="btn mx-1">View</a>
                             </div>
                         </div>
