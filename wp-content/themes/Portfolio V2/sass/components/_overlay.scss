@@ -1,0 +1,70 @@
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(.4rem);
+	display: block;
+	z-index: 10;
+	position: fixed;
+	top: 0;
+}
+
+.form {
+	width: 70rem;
+	// border: 2px white solid;
+	margin: 0 auto;
+
+	& form {
+		margin: 0 auto;
+		width: 60rem;
+		text-align: center;
+
+		& label {
+			color: var(--color-fifth);
+			font-size: 2rem;
+			text-align: left;
+		}
+
+		& input {
+			width: 40rem;
+			margin: 0 auto;
+			height: 5rem;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-bottom-right-radius: .5rem;
+			border-bottom-left-radius: .5rem;
+			text-align: left;
+			padding: .5rem;
+		}
+
+		& textarea {
+			width: 40rem;
+			margin: 0 auto;
+			padding: .5rem;
+			border-top: none;
+			border-right: none;
+			border-left: none;
+			border-bottom-right-radius: .5rem;
+			border-bottom-left-radius: .5rem;
+			text-align: left;
+		}
+	}
+	// transform: translateX(-50%, -50%);
+}
+
+.exitOverlay {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 4.5rem;
+	color: #fff;
+	margin: 2rem 4rem;
+	background-color: transparent;
+	border: none;
+
+	&:hover {
+		color: var(--color-secondary);
+		transition: .15s ease-out;
+	}
+}

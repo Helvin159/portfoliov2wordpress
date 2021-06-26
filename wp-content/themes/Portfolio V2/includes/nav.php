@@ -4,6 +4,6 @@
     </div>
     
     <div class="container p-3 navigation__container sayHiBtn mr-0" >
-        <a class="btn font-light">Say Hello</a>
+        <button class="btn font-light sayHiButton" name="sayHi" >Say Hello</button>
     </div>
 </nav>

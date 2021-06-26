@@ -11,9 +11,9 @@
                 </p>
             </div>
             <div class="row__col__4">
-                <a class="btn font-light">
+                <button class="btn font-light sayHiButton">
                     Let's do this
-                </a>
+                </button>
             </div>
         </div>
     </div>

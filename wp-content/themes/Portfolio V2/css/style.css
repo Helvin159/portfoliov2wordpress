@@ -105,6 +105,62 @@ p {
     .navigation__container a {
       margin-top: 3rem; }
 
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(0.4rem);
+  display: block;
+  z-index: 10;
+  position: fixed;
+  top: 0; }
+
+.form {
+  width: 70rem;
+  margin: 0 auto; }
+  .form form {
+    margin: 0 auto;
+    width: 60rem;
+    text-align: center; }
+    .form form label {
+      color: var(--color-fifth);
+      font-size: 2rem;
+      text-align: left; }
+    .form form input {
+      width: 40rem;
+      margin: 0 auto;
+      height: 5rem;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom-right-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+      text-align: left;
+      padding: .5rem; }
+    .form form textarea {
+      width: 40rem;
+      margin: 0 auto;
+      padding: .5rem;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      border-bottom-right-radius: .5rem;
+      border-bottom-left-radius: .5rem;
+      text-align: left; }
+
+.exitOverlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 4.5rem;
+  color: #fff;
+  margin: 2rem 4rem;
+  background-color: transparent;
+  border: none; }
+  .exitOverlay:hover {
+    color: var(--color-secondary);
+    transition: .15s ease-out; }
+
 .hero {
   background-color: #000; }
   .hero .h1 {
@@ -464,6 +520,10 @@ p {
 
 .d-block {
   display: block; }
+
+.no-scroll {
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 .btn {
   font-size: 1.7rem;

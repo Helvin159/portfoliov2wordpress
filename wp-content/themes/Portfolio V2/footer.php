@@ -49,6 +49,37 @@
         </div>
     </div>
 </div>
+
+<div class="overlay">
+    <button class="fas fa-times exitOverlay"></button>
+    <div class="container form">
+        <h1 class="permanent-marker text-center font-light d-4">Lets Chat</h1>
+        <form action="#">
+            <!-- <label for="fName">First Name</label> -->
+            <br>
+            <input type="text" id="fName" placeholder="First Name">
+            <br>
+            <!-- <label for="lName">Last Name</label>  -->
+            <br>
+            <input type="text" id="lName" placeholder="Last Name">
+            <br>
+            <!-- <label for="eMail">Email</label> -->
+            <br>
+            <input type="email" id="eMail" placeholder="eMail">
+            <br>
+            <!-- <label for="organization">Company</label> -->
+            <br>
+            <input type="text" id="organization" placeholder="Organization">
+            <br>
+            <!-- <label for="message">Message for me...</label> -->
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <br>
+            <button type="submit" class="btn font-light">Send</button>
+        </form>
+    </div>
+    
+</div>
         
 
         <script type="module" src="<?php echo get_theme_file_uri('js/script.js')?>"></script>
