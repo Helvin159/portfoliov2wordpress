@@ -75,7 +75,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container social-media-icons mt-4">
+                <div class="container social-media-icons mt-4 text-center">
                     <ul>
                         <li>
                             <a href="https://www.instagram.com/mrrymernyc/" target="_blank"><i class="fab fa-instagram"></i></a>
