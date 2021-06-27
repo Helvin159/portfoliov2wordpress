@@ -262,6 +262,24 @@ class abstract {
 				}
 
 				if (innerW <= 414) {
+					// Disappear
+					if (windowPos <= 2000) {
+						setTimeout(() => {
+							recentPics[0].style.transition = '.5s ease-in';
+							recentPics[0].style.opacity = '0';
+							recentPics[1].style.transition = '.5s ease-in';
+							recentPics[1].style.opacity = '0';
+							recentPics[2].style.transition = '.5s ease-in';
+							recentPics[2].style.opacity = '0';
+							recentPics[3].style.transition = '.5s ease-in';
+							recentPics[3].style.opacity = '0';
+							recentPics[4].style.transition = '.5s ease-in';
+							recentPics[4].style.opacity = '0';
+							recentPics[5].style.transition = '.5s ease-in';
+							recentPics[5].style.opacity = '0';
+						}, 10);
+					}
+
 					if (windowPos >= 2472) {
 						setTimeout(() => {
 							console.log(windowPos, 'current');
