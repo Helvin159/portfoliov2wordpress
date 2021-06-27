@@ -52,24 +52,31 @@
 
 <div class="overlay">
     <button class="fas fa-times exitOverlay"></button>
-    <div class="container form">
+    <div class="container overlay__contact">
         <h1 class="permanent-marker text-center font-light d-4">Lets Chat</h1>
         
-        <di class="row overlay__contact">
-            <div class="row__col__6 overlay__contact__info">
+        <di class="row overlay__contact__row">
+            <div class="row__col__4 overlay__contact__info">
                 <div class="container">
-                    <h2 class="d-3">Contact Information</h4>
+                    <h2 class="d-3 permanent-marker">Contact Information</h4>
                     <p>Fill out the form and I will get back to you within 24 hours.</p>
                 </div>
                 <div class="container">
                     <ul>
-                        <li><i class=""></i>(929) 523-6682</li>
-                        <li><i class=""></i>Helvin@helvinrymer.com</li>
-                        <li><i class=""></i>1460 Inwood Avenue <br/> Bronx, NY 10452</li>
+                        <li>
+                            
+                            <a href="tel:9295236682" ><i class="fas fa-mobile-alt mx-1"></i>(929) 523-6682</a>
+                        </li>
+                        <li>
+                            <a href="mailto:helvin@helvinrymer.com" ><i class="far fa-envelope-open mx-1"></i>Helvin@helvinrymer.com</a></li>
+                        <li>
+                            
+                            <a href="https://goo.gl/maps/mDyZkkpJFLfgeAGp6" target="_blank"><i class="fas fa-map-marker-alt mx-1"></i>1460 Inwood Avenue Bronx, NY 10452</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="row__col__6 overlay__contact__form">
+            <div class="row__col__4 overlay__contact__form">
                 <form action="#">
                     <!-- <label for="fName">First Name</label> -->
                     <input type="text" id="fName" placeholder="First Name" required>
@@ -80,7 +87,7 @@
                     <!-- <label for="organization">Company</label> -->
                     <input type="text" id="organization" placeholder="Organization">
                     <!-- <label for="message">Message for me...</label> -->
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="60" rows="8"></textarea>
                     <button type="submit" class="btn font-light mt-3" style="background:#7765E3">Send</button>
                 </form>
             </div>
