@@ -106,7 +106,7 @@
                     <!-- <label for="organization">Company</label> -->
                     <input type="text" id="organization" placeholder="Organization">
                     <!-- <label for="message">Message for me...</label> -->
-                    <textarea name="message" id="message" cols="68" rows="5"></textarea>
+                    <textarea name="message"  id="message" cols="68" rows="5" placeholder="A message for me..."></textarea>
                     <button type="submit" class="btn font-light mt-3" style="background:#7765E3">Send</button>
                 </form>
             </div>
