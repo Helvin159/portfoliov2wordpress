@@ -75,6 +75,25 @@
                         </li>
                     </ul>
                 </div>
+                <div class="container social-media-icons mt-4">
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/mrrymernyc/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/helvinrymer/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/Helvin159" target="_blank"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/mr_rymer" target="_blank"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/Helvin159" target="_blank"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="row__col__4 overlay__contact__form">
                 <form action="#">
@@ -87,7 +106,7 @@
                     <!-- <label for="organization">Company</label> -->
                     <input type="text" id="organization" placeholder="Organization">
                     <!-- <label for="message">Message for me...</label> -->
-                    <textarea name="message" id="message" cols="60" rows="8"></textarea>
+                    <textarea name="message" id="message" cols="60" rows="5"></textarea>
                     <button type="submit" class="btn font-light mt-3" style="background:#7765E3">Send</button>
                 </form>
             </div>
