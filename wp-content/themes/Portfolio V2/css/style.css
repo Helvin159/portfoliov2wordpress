@@ -108,38 +108,41 @@ p {
 .overlay {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.65);
   backdrop-filter: blur(0.4rem);
   -webkit-backdrop-filter: blur(0.4rem);
-  display: none;
+  display: block;
   z-index: 10;
   position: fixed;
   top: 0; }
 
 .form {
-  width: 70rem;
-  margin: 0 auto; }
+  width: auto;
+  margin: 0 auto;
+  padding-top: 10rem; }
   .form form {
     margin: 0 auto;
-    width: 60rem;
     text-align: center; }
     .form form label {
       color: var(--color-fifth);
       font-size: 2rem;
       text-align: left; }
     .form form input {
-      width: 40rem;
+      width: auto;
       margin: 0 auto;
-      height: 5rem;
+      height: 4.5rem;
       border-top: none;
       border-right: none;
       border-left: none;
       border-bottom-right-radius: .5rem;
       border-bottom-left-radius: .5rem;
       text-align: left;
-      padding: .5rem; }
+      padding: .5rem;
+      display: inline-block; }
+      .form form input :focus {
+        outline: none; }
     .form form textarea {
-      width: 40rem;
+      width: auto;
       margin: 0 auto;
       padding: .5rem;
       border-top: none;
@@ -148,6 +151,8 @@ p {
       border-bottom-right-radius: .5rem;
       border-bottom-left-radius: .5rem;
       text-align: left; }
+      .form form textarea :focus {
+        outline: none; }
 
 .exitOverlay {
   position: absolute;
@@ -171,7 +176,8 @@ p {
 
 .container {
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: block; }
   .container__large {
     min-width: 100vw;
     min-height: 100vh;

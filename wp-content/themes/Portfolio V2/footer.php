@@ -54,29 +54,38 @@
     <button class="fas fa-times exitOverlay"></button>
     <div class="container form">
         <h1 class="permanent-marker text-center font-light d-4">Lets Chat</h1>
-        <form action="#">
-            <!-- <label for="fName">First Name</label> -->
-            <br>
-            <input type="text" id="fName" placeholder="First Name">
-            <br>
-            <!-- <label for="lName">Last Name</label>  -->
-            <br>
-            <input type="text" id="lName" placeholder="Last Name">
-            <br>
-            <!-- <label for="eMail">Email</label> -->
-            <br>
-            <input type="email" id="eMail" placeholder="eMail">
-            <br>
-            <!-- <label for="organization">Company</label> -->
-            <br>
-            <input type="text" id="organization" placeholder="Organization">
-            <br>
-            <!-- <label for="message">Message for me...</label> -->
-            <br>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <br>
-            <button type="submit" class="btn font-light">Send</button>
-        </form>
+        
+        <di class="row overlay__contact">
+            <div class="row__col__6 overlay__contact__info">
+                <div class="container">
+                    <h2 class="d-3">Contact Information</h4>
+                    <p>Fill out the form and I will get back to you within 24 hours.</p>
+                </div>
+                <div class="container">
+                    <ul>
+                        <li><i class=""></i>(929) 523-6682</li>
+                        <li><i class=""></i>Helvin@helvinrymer.com</li>
+                        <li><i class=""></i>1460 Inwood Avenue <br/> Bronx, NY 10452</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row__col__6 overlay__contact__form">
+                <form action="#">
+                    <!-- <label for="fName">First Name</label> -->
+                    <input type="text" id="fName" placeholder="First Name" required>
+                    <!-- <label for="lName">Last Name</label>  -->
+                    <input type="text" id="lName" placeholder="Last Name">
+                    <!-- <label for="eMail">Email</label> -->
+                    <input type="email" id="eMail" placeholder="eMail" required>
+                    <!-- <label for="organization">Company</label> -->
+                    <input type="text" id="organization" placeholder="Organization">
+                    <!-- <label for="message">Message for me...</label> -->
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <button type="submit" class="btn font-light mt-3" style="background:#7765E3">Send</button>
+                </form>
+            </div>
+        </div>
+        
     </div>
     
 </div>

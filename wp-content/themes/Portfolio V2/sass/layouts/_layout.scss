@@ -1,71 +1,64 @@
-.container{
-    max-width: 120rem;
-    // min-height: 50rem;
-    margin: 0 auto;
-    // outline: 1px solid black;
-    // padding: 3rem 0;
+.container {
+	max-width: 120rem;
+	// min-height: 50rem;
+	margin: 0 auto;
+	display: block;
+	// outline: 1px solid black;
+	// padding: 3rem 0;
 
+	&__large {
+		min-width: 100vw;
+		min-height: 100vh;
+		margin: 0 auto;
 
+		// background-color: orangered;
+	}
 
-    &__large{
-        min-width: 100vw;
-        min-height: 100vh;
-        margin: 0 auto;
-
-        // background-color: orangered;
-    }
-
-    &__100w{
-        min-width: 100vw;
-        min-height: auto;
-        margin: 0 auto;
-        // padding: 3rem 0;
-    }
-
+	&__100w {
+		min-width: 100vw;
+		min-height: auto;
+		margin: 0 auto;
+		// padding: 3rem 0;
+	}
 }
 
-.row{
-    // background-color: #ccc;
-    padding: 8rem auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 100vw;
-    flex-wrap: wrap;
+.row {
+	// background-color: #ccc;
+	padding: 8rem auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 100vw;
+	flex-wrap: wrap;
 
-    
+	&__col {
+		// background-color: orangered;
+		padding: 3rem;
+		margin: 3rem;
+		flex: 0 1 9.29%;
+		// max-height: 1rem;
 
-    &__col{
-        // background-color: orangered;
-        padding: 3rem;
-        margin: 3rem;
-        flex: 0 1 9.29%;
-        // max-height: 1rem;
+		&__6 {
+			// background-color:#0070a0;
+			padding: 3rem;
+			margin: 3rem;
+			flex: 0 1 44%;
+		}
 
-        &__6{
-            // background-color:#0070a0;
-            padding: 3rem;
-            margin: 3rem;
-            flex:0 1 44%;
-        }        
-        
-        &__4{
-            // background-color:#0070a0;
-            // padding: 3rem;
-            margin: 3rem;
-            flex:1 1 26.65%;
-            // max-height: 1rem;
-        }
+		&__4 {
+			// background-color:#0070a0;
+			// padding: 3rem;
+			margin: 3rem;
+			flex: 1 1 26.65%;
+			// max-height: 1rem;
+		}
 
-        &__3{
-            // background-color:#0070a0;
-            padding: 3rem;
-            margin: 3rem;
-            flex:0 1 19%;
-        }
-    }
-
-    
+		&__3 {
+			// background-color:#0070a0;
+			padding: 3rem;
+			margin: 3rem;
+			flex: 0 1 19%;
+		}
+	}
 }
-
