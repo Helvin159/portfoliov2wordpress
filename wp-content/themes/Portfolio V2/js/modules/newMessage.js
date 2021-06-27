@@ -23,7 +23,7 @@ class newMessage {
 	async messageDispatcher (e) {
 		// Prevent Default Form Behaviour
 		e.preventDefault();
-		console.log('button works');
+		console.log('button');
 
 		// Variables
 		const fName = document.querySelector('#fname');
@@ -31,11 +31,13 @@ class newMessage {
 		const email = document.querySelector('#eMail');
 		const organization = document.querySelector('#organization');
 		const message = document.querySelector('#message');
-		const submitBtn = document.querySelector('[name="submit]');
+		const submitBtn = document.querySelector('#submit');
 		const plug = (axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce);
 
+		console.log(submitBtn);
+
 		// Prevent submit on empty form
-		if (fName.value != '' && email.value != '' && message.value != '' && date.value != null) {
+		if (fName.value != '' && email.value != '' && message.value != '') {
 			var newMessage = {
 				// message: {
 				title   : fName.value + ' ' + lName.value,
@@ -56,7 +58,7 @@ class newMessage {
 				console.log('response:', response);
 				if (response.status === 200) {
 					setTimeout(() => {
-						document.querySelector('.overlay').classList.add('d-none');
+						document.querySelector('.overlay').style.display = 'none';
 						// document.querySelector('.thankyouMessage').classList.remove('d-none');
 					}, 300);
 				}
@@ -64,9 +66,9 @@ class newMessage {
 				// document.querySelector('#sec8ErrorMsg').classList.remove('d-none');
 				// document.querySelector('#sec8ErrorMsg').style.animation = 'opacityChange 0.4s ease-in';
 				fName.value = '';
-				date.value = '';
+				// date.value = '';
 				message.value = '';
-				time.value = '';
+				// time.value = '';
 				email.value = '';
 			}
 		}

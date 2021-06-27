@@ -327,15 +327,19 @@ class abstract {
 			});
 		}
 
-		if (innerW < 600) {
-			document.querySelector('#message').cols = '45';
+		if (innerW <= 599) {
+			document.querySelector('#message').cols = '58';
 			document.querySelector('#message').rows = '10';
 		}
-		if (innerW > 600) {
-			document.querySelector('#message').cols = '60';
+		else if (innerW >= 600 && innerW < 900) {
+			document.querySelector('#message').cols = '44';
+			document.querySelector('#message').rows = '10';
+		}
+		else if (innerW >= 900 && innerW <= 1200) {
+			document.querySelector('#message').cols = '47';
 			document.querySelector('#message').rows = '5';
 		}
-		if (innerW > 1200) {
+		else if (innerW > 1200) {
 			document.querySelector('#message').cols = '68';
 			document.querySelector('#message').rows = '5';
 		}
