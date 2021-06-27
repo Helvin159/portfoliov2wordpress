@@ -139,9 +139,11 @@
 				}
 				& textarea:focus {
 					outline: 1px var(--color-secondary) auto;
+					-webkit-outline: 1px var(--color-secondary) auto;
 				}
 				& input:focus {
 					outline: 1px var(--color-secondary) auto;
+					-webkit-outline: 1px var(--color-secondary) auto;
 				}
 
 				& button {
