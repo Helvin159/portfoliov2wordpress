@@ -4,12 +4,15 @@
 	background-color: rgba(0, 0, 0, 0.65);
 	backdrop-filter: blur(.4rem);
 	-webkit-backdrop-filter: blur(.4rem);
-	display: block;
+	display: none;
 	z-index: 10;
 	position: fixed;
 	top: 0;
 
 	&__contact {
+		position: relative;
+		top: 12.5rem;
+
 		&__row {
 			padding: 0;
 			margin: 0 auto;
@@ -116,6 +119,10 @@
 					display: inline-block;
 					color: var(--color-secondary);
 					box-shadow: .1rem .1rem .3rem rgba(0, 0, 0, 0.2);
+
+					// @include respond(phone) {
+					// 	min-width: 47.9%;
+					// }
 				}
 
 				& textarea {
@@ -143,12 +150,10 @@
 					margin: 0 auto;
 				}
 			}
-
-			@include respond(phone) {
-				max-height: 20rem;
-				padding: none;
-				margin: 0 auto;
-			}
+		}
+		@include respond(phone) {
+			top: 10rem;
+			position: relative;
 		}
 	}
 }
