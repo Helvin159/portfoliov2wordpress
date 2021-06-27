@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="row__col__4 overlay__contact__form">
-                <form action="#">
+                <form  id="contactForm">
                     <!-- <label for="fName">First Name</label> -->
                     <input type="text" id="fName" placeholder="First Name" required>
                     <!-- <label for="lName">Last Name</label>  -->
@@ -116,7 +116,7 @@
     
 </div>
         
-
+    
         <script type="module" src="<?php echo get_theme_file_uri('js/script.js')?>"></script>
 
     </body>
