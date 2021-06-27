@@ -332,6 +332,10 @@ class abstract {
 			document.querySelector('#message').rows = '10';
 		}
 		if (innerW > 600) {
+			document.querySelector('#message').cols = '60';
+			document.querySelector('#message').rows = '5';
+		}
+		if (innerW > 1200) {
 			document.querySelector('#message').cols = '68';
 			document.querySelector('#message').rows = '5';
 		}

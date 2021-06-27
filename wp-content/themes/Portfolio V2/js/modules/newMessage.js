@@ -9,9 +9,6 @@ class newMessage {
 
 	events () {
 		const form = document.querySelector('#contactForm');
-		// const testimonialForm = document.querySelector('#testimonialForm');
-		// const newReviewBtn = document.querySelector('#newTestimonialBtn');
-		// const exitBtn = document.querySelector('#closeTestOverlayBtn');
 		// let overlayOn = false;
 
 		if (form) {
@@ -26,20 +23,18 @@ class newMessage {
 	async messageDispatcher (e) {
 		// Prevent Default Form Behaviour
 		e.preventDefault();
+		console.log('button works');
 
 		// Variables
 		const fName = document.querySelector('#fname');
 		const lName = document.querySelector('#lName');
 		const email = document.querySelector('#eMail');
 		const organization = document.querySelector('#organization');
-		// const date = document.querySelector('[name="date"]');
-		// const time = document.querySelector('[name="time"]');
 		const message = document.querySelector('#message');
 		const submitBtn = document.querySelector('[name="submit]');
 		const plug = (axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce);
 
 		// Prevent submit on empty form
-
 		if (fName.value != '' && email.value != '' && message.value != '' && date.value != null) {
 			var newMessage = {
 				// message: {
@@ -58,7 +53,7 @@ class newMessage {
 					portfolioData.root_url + '/wp-json/mrrymer/v1/new-message',
 					newMessage
 				);
-				// console.log('response:', response)
+				console.log('response:', response);
 				if (response.status === 200) {
 					setTimeout(() => {
 						document.querySelector('.overlay').classList.add('d-none');
