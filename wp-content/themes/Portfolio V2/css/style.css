@@ -206,7 +206,7 @@ p {
           margin: 2rem auto; }
     @media (max-width: 37.5em) {
       .overlay__contact {
-        top: 10rem;
+        top: 5rem;
         position: relative; } }
 
 .exitOverlay {
