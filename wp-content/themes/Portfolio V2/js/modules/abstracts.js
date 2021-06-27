@@ -310,9 +310,7 @@ class abstract {
 		}
 
 		if (innerW < 600) {
-			let textArea = document.querySelector('#message');
-
-			textArea.cols = '45';
+			document.querySelector('#message').cols = '45';
 		}
 	}
 }
