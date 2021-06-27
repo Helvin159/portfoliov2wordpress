@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="row__col__4 overlay__contact__form">
-                <form  id="contactForm">
+                <form action="#" id="contactForm">
                     <!-- <label for="fName">First Name</label> -->
                     <input type="text" id="fName" placeholder="First Name" required>
                     <!-- <label for="lName">Last Name</label>  -->
@@ -108,6 +108,7 @@
                     <!-- <label for="message">Message for me...</label> -->
                     <textarea name="message"  id="message" cols="68" rows="5" placeholder="A message for me..."></textarea>
                     <button type="submit" id="submit" class="btn font-light mt-3" style="background:#7765E3">Send</button>
+                    <!-- <input type="submit" id="submit" class="btn font-light mt-3" style="background:#7765E3" value="Submit" > -->
                 </form>
             </div>
         </div>
