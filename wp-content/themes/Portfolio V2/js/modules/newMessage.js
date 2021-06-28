@@ -1,4 +1,4 @@
-import axios from '../../node_modules/axios';
+import axios from '../../node_modules/axios/index';
 
 // Create new message
 class newMessage {
@@ -14,9 +14,6 @@ class newMessage {
 		if (form) {
 			form.addEventListener('submit', this.messageDispatcher);
 		}
-
-		// console.log('hmmm:   ', overlayOn)
-		// console.log(testimonialForm)
 	}
 
 	// methods
@@ -63,9 +60,11 @@ class newMessage {
 					}, 300);
 				}
 			} catch (e) {
-				// document.querySelector('#sec8ErrorMsg').classList.remove('d-none');
-				// document.querySelector('#sec8ErrorMsg').style.animation = 'opacityChange 0.4s ease-in';
+				document.querySelector('.overlay').classList.remove('d-none');
+				// document.querySelector('.overlay').style.animation = 'opacityChange 0.4s ease-in';
 				fName.value = '';
+				lName.value = '';
+				organization.value = '';
 				// date.value = '';
 				message.value = '';
 				// time.value = '';
