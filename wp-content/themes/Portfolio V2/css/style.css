@@ -94,7 +94,8 @@ p {
   font-style: normal;
   letter-spacing: .5rem; }
 
-.next {
+.next,
+.prev {
   letter-spacing: .1rem; }
 
 .navigation {
