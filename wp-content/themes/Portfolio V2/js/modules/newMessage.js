@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios from '../../node_modules/axios';
 
 // Create new message
 class newMessage {
@@ -59,6 +59,7 @@ class newMessage {
 					setTimeout(() => {
 						document.querySelector('.overlay').style.display = 'none';
 						// document.querySelector('.thankyouMessage').classList.remove('d-none');
+						return 'hi';
 					}, 300);
 				}
 			} catch (e) {

@@ -286,6 +286,7 @@ $.extend(
 			    if (typeof data2[i].serviceindex !== 'undefined' && typeof data2[i].nopadding === 'undefined' )
 			    {
 			        try{
+			        if (data2[i].t1==data2[i].t2)  data2[i].t2 += 24 * 60;    
 			        data2[i].t1 -= me.services[data2[i].serviceindex].pb;
 			        data2[i].t2 += me.services[data2[i].serviceindex].pa;
 			        } catch (e) {}
@@ -564,6 +565,8 @@ $.extend(
 		    	    me.cacheArr[d] = me.cacheArr[d] || [];
 		    	    for (var i=0;i<me.cacheArr[d].length;i++)
 		    	    {    
+		    	        me.cacheArr[d][i].t1 = me.cacheArr[d][i].t1 || me.cacheArr[d][i].h1*60+me.cacheArr[d][i].m1*1;
+		    	        me.cacheArr[d][i].t2 = me.cacheArr[d][i].t2 || me.cacheArr[d][i].h2*60+me.cacheArr[d][i].m2*1;
 		    	        if (me.cacheArr[d][i].t1>=me.cacheArr[d][i].t2)
 				             me.cacheArr[d][i].t2 += 24 * 60;
 		    	        if (st<=me.cacheArr[d][i].t1 && et>=me.cacheArr[d][i].t2) 
@@ -919,6 +922,7 @@ $.extend(
 		  			        {  
 		  			            var c = "s"+me.allUsedSlots[i].serviceindex+"q"+me.allUsedSlots[i].quantity;
 		  			            var c1 = "sq"+me.allUsedSlots[i].quantity;
+		  			            var d = me.allUsedSlots[i].d;
 		  			            if ($.inArray(d, me.invalidDatesByService[c]) > -1)
 		  			            {
 		  			                me.invalidDatesByService[c].splice($.inArray(d, me.invalidDatesByService[c]), 1);
@@ -927,7 +931,7 @@ $.extend(
 		  			            }
 		  			            me.usedSlots[me.allUsedSlots[i].d] = new Array();
 		  			            me.allUsedSlots = new Array();
-		  			        }  
+		  			        }
 		  			    }
 		  			    if ($(this).parents("fieldset").hasClass("ahbgutenberg_editor"))
 		  			        return false;

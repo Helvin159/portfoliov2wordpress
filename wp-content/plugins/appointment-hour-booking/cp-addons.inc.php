@@ -108,7 +108,7 @@ $nonce = wp_create_nonce( 'cpappb_actions_list' );
 		border-top: 3px solid #1e5799;
 	}
 h2.category {
-    background-color: #99CCFF;
+    background-color: #C3E0E5;
     border-bottom: 1px solid #336699;
     color: #224477;
     margin:0px;

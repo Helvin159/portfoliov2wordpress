@@ -1480,7 +1480,7 @@ class CP_AppBookingPlugin extends CP_APPBOOK_BaseClass {
 
         if( $redirect )
         {        
-            header("Location: ". $this->replace_tags($this->get_option('fp_return_page', CP_APPBOOK_DEFAULT_fp_return_page), $params, true));
+            header("Location: ". $this->replace_tags($this->translate_permalink($this->get_option('fp_return_page', CP_APPBOOK_DEFAULT_fp_return_page)), $params, true));
             exit();
         }    
     }
@@ -2372,7 +2372,20 @@ class CP_AppBookingPlugin extends CP_APPBOOK_BaseClass {
     {
         $this->item = intval($id);
     }    
-
+    
+    
+    public function translate_permalink($url)
+    {
+        $postid = url_to_postid($url);
+        if ($postid)
+        {
+            $newpostid = apply_filters( 'wpml_object_id', $postid, 'post', TRUE );
+            if ($newpostid != $postid)
+                $url = get_permalink($newpostid);
+        }
+        return $url;
+    }
+    
 
     public function translate_json($str)
     {
@@ -2386,9 +2399,13 @@ class CP_AppBookingPlugin extends CP_APPBOOK_BaseClass {
             $form_data[0][$i]->title = __($form_data[0][$i]->title,'appointment-hour-booking');   
             $form_data[0][$i]->userhelpTooltip = __($form_data[0][$i]->userhelpTooltip,'appointment-hour-booking'); 
             $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'appointment-hour-booking'); 
+            
+            if (property_exists($form_data[0][$i], 'predefined') && $form_data[0][$i]->predefined != '' && $form_data[0][$i]->ftype != 'fapp')
+                $form_data[0][$i]->predefined = __($form_data[0][$i]->predefined,'appointment-hour-booking');
+            
             if ($form_data[0][$i]->ftype == 'fCommentArea')
                 $form_data[0][$i]->userhelp = __($form_data[0][$i]->userhelp,'appointment-hour-booking');   
-            else if ($form_data[0][$i]->ftype == 'fradio' || $form_data[0][$i]->ftype == 'fcheck' || $form_data[0][$i]->ftype == 'fradio')    
+            else if ($form_data[0][$i]->ftype == 'fradio' || $form_data[0][$i]->ftype == 'fcheck' || $form_data[0][$i]->ftype == 'fdropdown')    
             {
                     for ($j=0; $j < count($form_data[0][$i]->choices); $j++)  
                         $form_data[0][$i]->choices[$j] = __($form_data[0][$i]->choices[$j],'appointment-hour-booking'); 

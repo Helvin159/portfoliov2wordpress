@@ -117,7 +117,7 @@
     
 </div>
         
-        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script type="module" src="<?php echo get_theme_file_uri('js/index.js')?>"></script>
         <!-- <script  src="<?php //echo get_theme_file_uri('dist/main.js')?>"></script> -->
 

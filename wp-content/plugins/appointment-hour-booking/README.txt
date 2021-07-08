@@ -1118,7 +1118,13 @@ Please note that the pro features aren't advised as part of the free plugin in t
 = 1.3.09 =
 * Add-ons section update
 
+= 1.3.10 =
+* Better WPML integration
+
+= 1.3.11 =
+* Fix to full day bookings
+
 == Upgrade Notice ==
 
-= 1.3.09 =
-* Add-ons section update
+= 1.3.11 =
+* Fix to full day bookings
