@@ -64,12 +64,11 @@ class newMessage {
 						document.querySelector('.overlay').style.display = 'none';
 						document.querySelector('body').style.overflowY = '';
 						document.querySelector('body').style.overflowX = '';
-						// document.querySelector('.thankyouMessage').classList.remove('d-none');
 					}, 300);
 				}
 			} catch (e) {
 				document.querySelector('.overlay').classList.remove('d-none');
-				// document.querySelector('.overlay').style.animation = 'opacityChange 0.4s ease-in';
+
 				fName.value = '';
 				lName.value = '';
 				organization.value = '';
