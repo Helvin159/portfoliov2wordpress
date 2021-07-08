@@ -5,9 +5,17 @@ require get_theme_file_path('/includes/routes.php');
 // Files
 function portfolio(){
   
-  // Files
+
+if($_SERVER['HTTP_HOST'] === 'myportfolio.local'){
+// Files
     wp_enqueue_style('my-style', get_theme_file_uri('/css/style.css'), null, '1.0', 'all');
-    wp_enqueue_script('main-scripts', get_theme_file_uri('/bundled-assets/bundled.js'), NULL, '1.0', true);
+    wp_enqueue_script('main-scripts', get_theme_file_uri('/bundled-assets/dev.js'), NULL, '1.0', true);
+}else{
+// Files
+    wp_enqueue_style('my-style', get_theme_file_uri('/css/style.css'), null, '1.0', 'all');
+    wp_enqueue_script('main-scripts', get_theme_file_uri('/bundled-assets/bundled.1ba95cde6b8a404379a9.js'), NULL, '1.0', true);
+}
+  
     
   // Nonce
     wp_localize_script('main-scripts', 'portfolioData', array(

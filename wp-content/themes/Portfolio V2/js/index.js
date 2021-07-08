@@ -1,7 +1,7 @@
 // import '../css/style.css';
 
 // Modules
-// import load from 'loadash';
+// import _ from 'loadash';
 import redirectPage from './modules/redirect.js';
 import navigationWork from './modules/navigation.js';
 import abstracts from './modules/abstracts.js';
