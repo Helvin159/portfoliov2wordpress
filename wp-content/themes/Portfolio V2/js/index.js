@@ -1,5 +1,3 @@
-// import axios from '../node_modules/axios';
-
 // Modules
 // import load from 'loadash';
 import redirectPage from './modules/redirect.js';
