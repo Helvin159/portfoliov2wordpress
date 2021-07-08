@@ -1,4 +1,4 @@
-import axios from '../../node_modules/axios';
+import axios from '../../../../../node_modules/axios';
 
 // Create new message
 class newMessage {
@@ -57,9 +57,8 @@ class newMessage {
 				console.log('response:', response);
 				if (response.status === 200) {
 					setTimeout(() => {
-						document.querySelector('.overlay').style.display = 'none';
+						// document.querySelector('.overlay').style.display = 'none';
 						// document.querySelector('.thankyouMessage').classList.remove('d-none');
-						return 'hi';
 					}, 300);
 				}
 			} catch (e) {
@@ -68,9 +67,7 @@ class newMessage {
 				fName.value = '';
 				lName.value = '';
 				organization.value = '';
-				// date.value = '';
 				message.value = '';
-				// time.value = '';
 				email.value = '';
 			}
 		}
