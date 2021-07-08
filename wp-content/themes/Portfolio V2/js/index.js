@@ -1,3 +1,5 @@
+// import '../css/style.css';
+
 // Modules
 // import load from 'loadash';
 import redirectPage from './modules/redirect.js';

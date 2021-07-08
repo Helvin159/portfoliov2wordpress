@@ -1,10 +1,9 @@
-import axios from '../../../../../node_modules/axios';
+import axios from 'axios';
 
 // Create new message
 class newMessage {
 	constructor () {
 		axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce;
-		// axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce;
 		this.events();
 	}
 
@@ -22,10 +21,10 @@ class newMessage {
 	async messageDispatcher (e) {
 		// Prevent Default Form Behaviour
 		e.preventDefault();
-		console.log('button');
+		// console.log('button');
 
 		// Variables
-		const fName = document.querySelector('#fname');
+		const fName = document.querySelector('#fName');
 		const lName = document.querySelector('#lName');
 		const email = document.querySelector('#eMail');
 		const organization = document.querySelector('#organization');
@@ -33,7 +32,12 @@ class newMessage {
 		const submitBtn = document.querySelector('#submit');
 		const plug = (axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce);
 
-		console.log(submitBtn);
+		// console.log(submitBtn);
+		// console.log(fName, 'fName');
+		// console.log(lName, 'lName');
+		// console.log(email, 'email');
+		// console.log(organization, 'org');
+		// console.log(message, 'msg');
 
 		// Prevent submit on empty form
 		if (fName.value != '' && email.value != '' && message.value != '') {
@@ -54,10 +58,12 @@ class newMessage {
 					portfolioData.root_url + '/wp-json/mrrymer/v1/new-message',
 					newMessage
 				);
-				console.log('response:', response);
+				// console.log('response:', response);
 				if (response.status === 200) {
 					setTimeout(() => {
-						// document.querySelector('.overlay').style.display = 'none';
+						document.querySelector('.overlay').style.display = 'none';
+						document.querySelector('body').style.overflowY = '';
+						document.querySelector('body').style.overflowX = '';
 						// document.querySelector('.thankyouMessage').classList.remove('d-none');
 					}, 300);
 				}

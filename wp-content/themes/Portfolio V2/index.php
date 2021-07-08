@@ -1,4 +1,4 @@
-<!-- LMFAO -->
+<!-- YAY -->
         <?php 
         // get_header();
         // require_once('includes/nav.php');
