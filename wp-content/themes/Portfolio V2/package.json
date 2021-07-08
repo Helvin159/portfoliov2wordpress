@@ -9,7 +9,6 @@
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"axios": "^0.21.1",
 		"loadash": "^1.0.0",
 		"node-sass": "^5.0.0",
 		"webpack": "^5.40.0",
@@ -17,6 +16,7 @@
 	},
 	"dependencies": {
 		"gh-pages": "^3.2.3",
+		"axios": "^0.21.1",
 		"live-server": "^1.2.1",
 		"sass": "^1.35.1",
 		"webpack-dev-server": "^3.11.2",
