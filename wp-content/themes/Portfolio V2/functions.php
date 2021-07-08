@@ -1,4 +1,7 @@
 <?php 
+// Routes
+require get_theme_file_path('/includes/routes.php');
+
 // Files
 function portfolio(){
   

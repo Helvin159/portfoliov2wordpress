@@ -1,14 +1,16 @@
-import axios from '../../node_modules/axios/index';
+import axios from '../../node_modules/axios';
 
 // Create new message
 class newMessage {
 	constructor () {
 		axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce;
+		// axios.defaults.headers.common['X-WP-Nonce'] = portfolioData.nonce;
 		this.events();
 	}
 
 	events () {
 		const form = document.querySelector('#contactForm');
+
 		// let overlayOn = false;
 
 		if (form) {

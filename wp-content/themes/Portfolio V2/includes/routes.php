@@ -26,8 +26,8 @@ function registerNewMessage(){
 function message($data){
   $title = sanitize_text_field($data['title']);
   $email = sanitize_text_field($data['email']);
-  $organization = sanitize_text_field($data['organization']);
-  $commentOne = sanitize_text_field($data['message']);
+  $organization = sanitize_text_field($data['org']);
+  $commentOne = sanitize_text_field($data['comment']);
 
 
   $contentMessage = "
