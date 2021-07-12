@@ -7,7 +7,7 @@
             </div>
             <div class="row__col__4 contact__flexContainer__middleCol">
                 <p>
-                    Send me a message and lets get chatting. 
+                    Send me a message and lets start chatting. 
                 </p>
             </div>
             <div class="row__col__4">
