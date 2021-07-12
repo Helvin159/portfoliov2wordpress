@@ -7,7 +7,7 @@
             </div>
             <div class="row__col__4 contact__flexContainer__middleCol">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. 
+                    Send me a message and lets get chatting. 
                 </p>
             </div>
             <div class="row__col__4">
