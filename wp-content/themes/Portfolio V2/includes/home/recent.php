@@ -1,7 +1,7 @@
 <div class="container__100w recent">
     <div class="container text-center recent__header py-4">
         <h1 class="d-3 permanent-marker">My Recent Work!</h1>
-        <p>Subline Goes Here... <a href="mailto:helvin@helvinrymer.com">Email Me</a></p>
+        <p>Some of the projects I've been working on...</p>
     </div>
     <div class="container">
         <div class="row py-3 recent__flexContainer text-center">
